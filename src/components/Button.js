@@ -6,7 +6,7 @@ function Button(props) {
     return isNaN(valor) && (valor !== '.') && (valor !== '=');
   };
 
-  // Assicurati che `props.children` sia sempre una stringa
+ 
   const buttonClass = `button-container ${esOperador(props.children) ? 'operador' : ''}`.trim();
 
   return (

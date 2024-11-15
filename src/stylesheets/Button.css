@@ -32,18 +32,3 @@
 
 
 
-/* Media Query per una migliore responsività */
-@media (max-width: 600px) {
-  .button-container {
-    font-size: 16px; /* Riduci il font sui dispositivi più piccoli */
-    padding: 10px;
-  }
-}
-
-@media (max-width: 400px) {
-  .button-container {
-    font-size: 14px;
-    padding: 8px;
-    max-width: 100px; /* Riduci ulteriormente la dimensione massima sui dispositivi molto piccoli */
-  }
-}
