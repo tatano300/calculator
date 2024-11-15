@@ -1,0 +1,19 @@
+.input {
+    height: 75px;
+    width: 100%; /* Allarga l'input per occupare tutta la larghezza del contenitore */
+    max-width: 500px; /* Imposta una larghezza massima per evitare che sia troppo largo */
+    border-radius: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    padding: 11px 30px 11px 11px;
+    border: 1px solid #888; /* Usa border invece di margin per il bordo */
+    box-shadow: -1px 4px 1px 1px white;
+    box-sizing: border-box; /* Include padding e border nel calcolo della larghezza */
+  }
+  

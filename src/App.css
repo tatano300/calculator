@@ -1,38 +1,53 @@
+/* Rende l'App full screen */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 100vh; /* Usa min-height per assicurarti che riempia tutto il browser */
+  padding-top: 10px;
+  background-color: #1b1b32;
+  font-family: 'Lato', sans-serif;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Modificato per layout verticale */
+  align-items: center;
+  justify-content: flex-start; /* Modificato per prevenire stretching */
+}
+
+/* Allinea e centra il logo */
+.freecodecamp-logo-container {
+  width: 100%;
+  height: auto; /* Cambia l'altezza in auto */
+  margin: 20px 0; /* Spazio aggiuntivo sopra e sotto */
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Corretto per il selettore della classe del logo */
+.freecodecamp-logo {
+  max-height: 120px; /* Imposta un'altezza massima più grande */
+  max-width: 100%; /* Assicura che l'immagine non superi la larghezza del contenitore */
+  object-fit: contain;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Layout del contenitore della calcolatrice */
+.container-calculator {
+  width: 90%; /* Adatta la dimensione per dispositivi mobili */
+  max-width: 400px; /* Dimensione massima */
+  height: 600px;
+  padding: 14px;
+  background-color: #99c9ff;
+  border-radius: 20px;
+  border: 5px solid white;
+  display: flex;
+  flex-direction: column; /* Colonne per ogni fila */
+  align-items: center;
 }
+
+
+.line {
+  display: flex;
+  justify-content: space-around; /* Distribuisce i bottoni in modo uniforme */
+  align-items: center;
+  width: 100%;
+  margin: 10px 0;
+  gap: 10px;
+}
+
